@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+h1,
+p,
+li {
+  border: 1px dashed rgb(255, 170, 0);
+}
+
+.lorem {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: magenta;
+  text-decoration: none;
+  line-height: 70px;
+  word-spacing: 30px;
+  letter-spacing: 20px;
+}
+
+.glass {
+    width: 50px;
+    height: 50px;
+    background-color: #0ff;
+    margin-bottom: 10px;
+}
+
+/* descendant combinator */
+.glass:nth-child(4), .glass:nth-child(8), .glass:nth-child(12){
+    background: red;
+}
+
+/* targetting the child directly after h1 all inside the section tag */
+section h1+p {
+  font-size: 35px;
+  color: blue;
+  border: 5px dashed blueviolet;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: left;
+}
+
+.yappa:active {
+  color: white;
+}
+
+.yappa:visited {
+  color: saddlebrown;
+}
+
+.model {
+  width: 100px;
+  height: 100px;
+  border:1px solid tomato;
+  border-radius: 30px;
+  background-color: indigo;
+  padding: 20px;
+}
+
+.bolu {
+  border: 2px solid;
+  /* padding: 30px; */
+  /* padding-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 80px; */
+  padding: 40px 20px 60px 80px;
+}
+.one, .two, .three {
+  height: 100px;
+  width: 100px;border: 1px solid;
+  margin: 30px;
+  margin-left: 200px;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: yellow;
+  visibility: hidden;
+}
+
+.three {
+  background-color: green;
+}
